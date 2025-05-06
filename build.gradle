@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application' // Add this plugin
+}
+
+group = 'org.quizsystem'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = 'org.quizsystem.core.QuizSystemDemo'
+}
